@@ -1,0 +1,19 @@
+@import "_common";
+
+.contacts {
+  background-color: #ec6f66;
+  background-image: radial-gradient(circle farthest-corner at 100% 100%, #ec6f66, hsla(4, 78%, 66%, 0) 60%),
+                    linear-gradient(90deg, #ec6f66, #f3a183);
+  padding-top: 212px;
+
+  &__headline {
+
+  }
+
+  &-title {
+    font-size: 75px;
+    line-height: 84px;
+    color: #fff;
+  }
+
+}

@@ -1,0 +1,90 @@
+@import "_common";
+
+.questions {
+
+  &-section {
+    background-image: radial-gradient(circle farthest-corner at 0% 100%,
+      rgba(255, 100, 97, .79),
+      rgba(255, 100, 97, 0) 35%),
+    linear-gradient(90deg, #ffc371, #ff6461);
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+
+  &__headline {
+    margin-bottom: 58px;
+  }
+
+  &-title {
+    font-family: $font-family-headline;
+    color: #fff;
+    font-size: 75px;
+    line-height: 90px;
+    font-weight: 700;
+    max-width: 550px;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+  }
+
+  &-subtitle {
+    max-width: 590px;
+    margin-top: 60px;
+    color: #fff;
+  }
+
+  &__list {
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 66px;
+      margin-left: 200px;
+    }
+    &:before {
+       background: url('/src/images/caterpillar.svg') no-repeat;
+     }
+    &:after {
+      background: url('/src/images/butterfly.svg') no-repeat;
+    }
+  }
+
+  &-item {
+    display: block;
+    width: 660px;
+    border-bottom: 1px solid rgba(255,255,255, .4);
+    background-image: url('/src/images/arrow.svg'), url('/src/images/arrow-hover.svg');
+    background-position: 100% 50%, 150% 50%;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    -webkit-transition: background-color 200ms ease-in-out, padding 200ms;
+    transition: background-color 200ms ease-in-out, padding 200ms;
+
+    &:hover {
+      background-position: 150% 50%, 100% 50%;
+      padding-left: 10px;
+    }
+
+    &:last-child {
+      border-bottom-color: transparent;
+    }
+  }
+
+  &__name {
+    font-family: co-headline, sans-serif;
+    color: #fff;
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: left;
+    border: none;
+    outline: none;
+    background: none;
+    display: block;
+    padding: 40px 65px 40px 0;
+    text-decoration: none;
+  }
+}
+
+
+

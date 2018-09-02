@@ -1,0 +1,38 @@
+@import "_common";
+
+.error {
+
+  &-page {
+    background-color: #fff;
+  }
+
+  &__message {
+    text-align: center;
+  }
+
+  &-title {
+    font-family: $font-family-headline;
+    font-size:  45px;
+    font-weight: 700;
+    color: $accent-color;
+    margin-bottom: 1em;
+  }
+
+  &-text {
+    font-family: $font-family-base;
+    font-size:  16px;
+    line-height: 26px;
+    color: #312E5E;
+  }
+  &-link{
+    color: $accent-color;
+    border-bottom: 1px solid transparent;
+    transition: border 0.2s;
+  }
+  &-link:hover {
+    border-bottom-color: currentColor;
+  }
+}
+
+
+

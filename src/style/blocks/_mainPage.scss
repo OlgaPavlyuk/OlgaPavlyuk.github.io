@@ -1,0 +1,99 @@
+@import "_common";
+
+
+.main {
+  &-section {
+    text-align: center;
+    background: linear-gradient(90deg, #1a164c, #312e5e 50%, #1a164c), #1a164c;
+    position: relative;
+    height: 100vh;
+  }
+
+  &-title {
+    line-height: 29px;
+    font-size: 48px;
+    text-align: center;
+    color: #00b5ff;
+    margin-bottom: 35px;
+    @media (max-width: 767px) {
+      font-size: 38px;
+      line-height: 48px;
+      margin: 0 0 25px;
+    }
+  }
+  &-subtitle {
+    font-weight: 700;
+    line-height: 22px;
+    color: #dbd8eb;
+    max-width: 618px;
+    margin: 0 auto 100px;
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 36px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    @media (max-width: 1023px) {
+      bottom: 25px;
+    }
+    @media (max-width: 767px) {
+      bottom: 10px;
+    }
+
+    .icon {
+      position: relative;
+      width: 27px;
+      height: 60px;
+      margin: 0 auto;
+      color: $accent-color;
+      transition: fill .2s;
+      display: inline-block;
+      &:hover {
+        color: #FFF;
+      }
+    }
+  }
+}
+
+.link--teaser {
+	font-size: 14px;
+	display: inline-block;
+	color: $accent-color;
+	margin: 0 auto;
+	transition: color 0.2s;
+
+  &:hover {
+    color: #fff;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.mouse-anim {
+  animation: mouseAnimation 2s ease infinite 2.5s;
+}
+
+@keyframes mouseAnimation {
+  0% {
+    transform: translate(3px, 6px);
+  }
+  15% {
+    transform: translate(3px, 11px);
+  }
+  16% {
+    transform: translate(3px, 11px);
+  }
+  30% {
+    transform: translate(3px, 6px);
+  }
+  100% {
+    transform: translate(3px, 6px);
+  }
+}
+

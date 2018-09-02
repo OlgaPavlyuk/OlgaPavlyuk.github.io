@@ -1,0 +1,30 @@
+@import "_common";
+
+.services {
+  background-color: #00C9A7;
+  background: radial-gradient(circle closest-corner at 100% 50%, #00c9a7,
+                                                          rgba(0, 201, 167, 0)),
+                    radial-gradient(circle closest-corner at 100% 50%, #cdee8f, hsla(81, 74%, 75%, 0)),
+                    linear-gradient(90deg, #00c9a7, #66d79b 32%, #9ce492 63%, #cdee8f);
+  padding-top: 262px;
+
+  &__headline {
+
+  }
+
+  &-title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 84px;
+    color: #fff;
+    max-width: 731px;
+  }
+
+  &-subtitle {
+    color: #1a164c;
+    max-width: 820px;
+  }
+
+}
+
+

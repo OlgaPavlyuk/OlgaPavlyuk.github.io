@@ -1,0 +1,32 @@
+.slideRight-enter-active {
+  transition: all 0.5s ease-out;
+}
+.slideRight-leave-active{
+  transition: all 0.3s ease;
+}
+.slideRight-enter {
+  transform: translateX(-100vw);
+}
+.slideRight-enter-to {
+  transform: translateX(0);
+}
+.slideRight-leave-to {
+  transform: translateX(100vw);
+}
+
+.slideLeft-enter-active {
+  transition: all 0.5s ease-out;
+}
+.slideLeft-leave-active{
+  transition: all 0.3s ease;
+}
+.slideLeft-enter {
+  transform: translateX(100vw);
+}
+.slideLeft-enter-to {
+  transform: translateX(0);
+}
+.slideLeft-leave-to {
+  transform: translateX(-100vw);
+
+}

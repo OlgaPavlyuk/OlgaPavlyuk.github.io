@@ -1,0 +1,21 @@
+@import "_common";
+
+.clients {
+  background-color: #fff;
+  padding-top: 212px;
+
+  .section {
+    height: 100vh;
+  }
+
+  &__headline {
+
+  }
+
+  &-title {
+    font-size: 75px;
+    line-height: 84px;
+    color: $accent-color
+  }
+
+}

@@ -1,0 +1,30 @@
+@import "_common";
+
+.cases {
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+	background: url('/src/images/tea-left.svg') calc(50% - 300px) 0,
+              url('/src/images/tea-right.svg') calc(50% + 300px) 0,
+              linear-gradient(90deg, #00d2ff, #3a7bd5);
+  background-repeat: no-repeat;
+  background-size: auto, auto;
+  padding-top: 262px;
+
+  &__headline {
+    padding-left: 100px;
+  }
+
+  &-title {
+    font-size: 52px;
+    line-height: 84px;
+    color: #fff;
+    font-family: $font-family-headline;
+    font-weight: 700;
+  }
+  &-subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $font-family-base;
+    color: #1a164c;
+  }
+}
+

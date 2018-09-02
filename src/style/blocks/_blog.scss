@@ -1,0 +1,28 @@
+@import "_common";
+
+.blog {
+    background-color: #aa56bf;
+    background-image: radial-gradient(circle at 0 30%, rgba(170, 86, 191, .7), rgba(170, 86, 191, 0) 30%),
+    linear-gradient(220deg, #aa56bf, #4a67cf);
+    padding-top: 262px;
+    height: 250vh;
+
+  &__headline {
+
+  }
+
+  &-title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 84px;
+    color: #fff;
+  }
+
+  &-subtitle {
+    color: #fff;
+    max-width: 820px;
+  }
+
+}
+
+
